@@ -10,6 +10,7 @@
   text-align: center;
 }
 
+/* Logo & Branding Elements */
 .app-logo {
   --logo-size: 6em;
   --logo-padding: 1.5em;
@@ -30,11 +31,11 @@
   filter: drop-shadow(0 0 2em var(--react-logo-shadow));
 }
 
+/* Animations */
 @keyframes spin-clockwise {
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
