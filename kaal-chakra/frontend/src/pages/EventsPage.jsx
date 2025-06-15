@@ -42,10 +42,8 @@ const EventsPage = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-amber-50'}`}>
       {/* Background */}
       <div
-        className="fixed inset-0 bg-cover bg-center opacity-20"
-        style={{
-          backgroundImage: `url('/images/Main_Baground.png')`,
-        }}
+        className="fixed inset-0 bg-cover bg-center opacity-70"
+        style={{ backgroundImage: `url('/images/Main_Baground.png')` }}
       ></div>
 
       <div className="relative z-10 container mx-auto px-4 py-8">
@@ -55,8 +53,8 @@ const EventsPage = () => {
             onClick={() => navigate('/home')}
             variant="outline"
             className={`mb-4 ${isDarkMode
-              ? 'border-amber-600 text-amber-300 hover:bg-amber-600 hover:text-white'
-              : 'border-amber-600 text-amber-700 hover:bg-amber-600 hover:text-white'
+                ? 'border-amber-600 text-amber-300 hover:bg-amber-600 hover:text-white'
+                : 'border-amber-600 text-amber-700 hover:bg-amber-600 hover:text-white'
               }`}
           >
             <ArrowLeft className="mr-2" size={16} />
@@ -64,8 +62,8 @@ const EventsPage = () => {
           </Button>
 
           <div className={`p-6 rounded-xl backdrop-blur-md border ${isDarkMode
-            ? 'bg-gray-800/50 border-amber-700/30'
-            : 'bg-white/50 border-amber-200/30'
+              ? 'bg-gray-800/50 border-amber-700/30'
+              : 'bg-white/50 border-amber-200/30'
             }`}>
             <h1 className={`text-3xl md:text-4xl font-bold mb-4 ${isDarkMode ? 'text-amber-200' : 'text-amber-900'
               }`}>

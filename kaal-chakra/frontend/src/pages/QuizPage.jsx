@@ -168,9 +168,9 @@ const QuizPage = () => {
     }`}>
       {/* Background */}
       <div 
-        className="fixed inset-0 bg-cover bg-center opacity-30"
+        className="fixed inset-0 bg-cover bg-center opacity-10"
         style={{
-          backgroundImage: `url('/images/Main_Baground.png')`,
+          backgroundImage: `url('/images/Main_Baground.png.png')`,
         }}
       ></div>
 

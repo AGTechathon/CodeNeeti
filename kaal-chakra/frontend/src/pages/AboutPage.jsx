@@ -65,7 +65,7 @@ const AboutPage = () => {
     <div className={`min-h-screen ${isDarkMode ? 'bg-gray-900' : 'bg-amber-50'}`}>
       {/* Background */}
       <div 
-        className="fixed inset-0 bg-cover bg-center opacity-30"
+        className="fixed inset-0 bg-cover bg-center opacity-40"
         style={{
           backgroundImage: `url('/images/Main_Baground.png')`,
         }}

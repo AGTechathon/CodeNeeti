@@ -54,7 +54,7 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Call Us',
-      info: '+91 8767xxxxxx',
+      info: '+91 854xxxxxx',
       description: 'Mon-Fri from 8am to 6pm'
     },
     {
@@ -77,7 +77,7 @@ const ContactPage = () => {
     }`}>
       {/* Background */}
       <div 
-        className="fixed inset-0 bg-cover bg-center opacity-30"
+        className="fixed inset-0 bg-cover bg-center opacity-10"
         style={{
           backgroundImage: `url('/images/Main_Baground.png')`,
         }}

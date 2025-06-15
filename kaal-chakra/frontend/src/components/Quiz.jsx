@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+// Example quiz data generator based on event (replace with real logic as needed)
 const generateQuizQuestions = (event) => [
   {
     question: `When did the event \"${event.title}\" take place?`,

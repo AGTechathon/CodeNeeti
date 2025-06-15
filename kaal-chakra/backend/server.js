@@ -1,17 +1,25 @@
-import express from "express";
-import cors from "cors";
-import dotenv from "dotenv";
-import { connectDB } from "./config.js";
-import authRoutes from "./routes/auth.js";
+const express = require('express');
+const cors = require('cors');
+const path = require("path");
+require('dotenv').config();
 
-dotenv.config();
+const eventsRouter = require('./routes/events'); 
+
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-connectDB();
 app.use(cors());
 app.use(express.json());
 
-app.use("/api", authRoutes);
+// API route for historical events
+app.use('/api/events', eventsRouter);
+app.use('/audios', express.static(path.join(__dirname, 'public/audios')));
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Root route
+app.get('/', (req, res) => {
+  res.send('Kaal-Chakra Backend is running');
+});
+
+app.listen(PORT, () => {
+  console.log(`Server started on port ${PORT}`);
+});
